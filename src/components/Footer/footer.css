@@ -1,0 +1,106 @@
+.footer {
+    background-color: #fefefe;
+    color: #333;
+    padding: 3rem 1.5rem 1rem;
+    border-top: 2px solid #eaeaea;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.04);
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .footer-brand h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  
+  .footer-brand p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .footer-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .footer-links,
+  .footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    min-width: 150px;
+  }
+  
+  .footer-links h4,
+  .footer-socials h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: #555;
+  }
+  
+  .footer-links a,
+  .footer-socials a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .footer-links a:hover,
+  .footer-socials a:hover {
+    color: #111;
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #aaa;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+  }
+  
+  /* 🔄 Responsive for Desktop */
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .footer-brand {
+      flex: 1;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .footer-sections {
+      flex: 1.5;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 4rem;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .footer-links,
+    .footer-socials {
+      align-items: flex-start;
+    }
+  }
+  
