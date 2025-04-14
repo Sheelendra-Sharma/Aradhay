@@ -1,0 +1,95 @@
+.serial-gallery-container {
+  padding: 20px;
+  align-items: center;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.serial-gallery-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.serial-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  max-width: 1070px; /* Controls max width of 4 columns */
+  margin: 0 auto;     /* Centers the grid horizontally */
+  padding: 0 20px;     /* Left/right padding for small screens */
+}
+
+
+.serial-gallery-grid-item {
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.serial-gallery-grid-item:hover {
+  transform: scale(1.05);
+}
+
+.serial-gallery-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  height: auto;
+}
+
+.serial-gallery-caption {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.serial-gallery-caption2 {
+  margin-top: 8px;
+}
+
+.serial-gallery-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.serial-gallery-popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.serial-gallery-popup-title {
+  margin-bottom: 10px;
+}
+
+.serial-gallery-related-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.serial-gallery-related-image {
+  width: 100px;
+  border-radius: 8px;
+  height: auto;
+}
+
+.serial-gallery-close-button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
