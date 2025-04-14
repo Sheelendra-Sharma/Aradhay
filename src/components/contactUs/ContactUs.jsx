@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Contact.css";
+import "./contact.css";
 import Swal from 'sweetalert2';
 
 const ContactUs = () => {
